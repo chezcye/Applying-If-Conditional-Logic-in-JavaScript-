@@ -1,7 +1,10 @@
 function writeIt() {
     var lesson = new Date().getHours
+    
     var timeOfDay;
+    
 // The code use if statement to determine the time of day and does two things: it writes a greeting on the screen and set the value of the timeOfDay variable. 
+    
     if(lesson >= 7 && lesson < 12){
         document.write("Good Morning!");
         timeOfDay="morning";
@@ -12,8 +15,10 @@ function writeIt() {
         document.write("Good Night");
         timeOfDay="night";
     }
+    
 // Now add a switch statement that uses the value of timeOfDay to determine what image to display in the web page. 
-    switch(timeOfDay){
+    
+    switch(timeOfDay) {
         case "morning":
         case "day":
             document.write("<img src='day.png' />");
@@ -23,6 +28,7 @@ function writeIt() {
             break;
         default:
             document.write("<img src='day.png' />");
-    }
+            
+    } // end of the switch statement. 
     
-}
+} // The end of the writeIt() function
